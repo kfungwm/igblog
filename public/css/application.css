@@ -1,0 +1,22 @@
+body, html {
+    height: 90%;
+}
+
+.bgimg-1 {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('/img/bg1.jpg');
+    min-height: 100%;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
