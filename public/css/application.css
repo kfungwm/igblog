@@ -20,3 +20,9 @@ body, html {
         background-attachment: scroll;
     }
 }
+
+#igpix {
+  width: 30%;
+  
+  padding: 2px 2px;
+}
