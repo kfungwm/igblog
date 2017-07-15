@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/application.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-
     <title>Instagram</title>
 
   </head>
@@ -15,13 +13,27 @@
 
     </div>
 
-    <div class="container">
+    <div class="container text-center">
 
       Instagram
     </div>
+
     <div class="container text-center">
-      <div id="instagram">
+      <p>
+        Welcome World
+      </p>
+      <div class="instagram">
+
       </div>
+
+
+      {{#each igApi as |igApi|}}
+        <div class="outer">
+          <a target="_blank" href="{{{igApi.url}}}"><div class="inner" style="background-image: url('{{{igApi.img}}}')">
+          </div>
+        </div>
+      {{/each}}
+
     </div>
 
 
@@ -34,7 +46,7 @@
 
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="js/instagram.js"></script>
   </body>

@@ -21,8 +21,33 @@ body, html {
     }
 }
 
-#igpix {
-  width: 30%;
-  
-  padding: 2px 2px;
+
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto auto;
+}
+
+.outer {
+  /*width: 200px;
+  height: 200px;*/
+  /*float: left;
+  flex-wrap: wrap;*/
+  display: inline-block;
+  margin: 2px;
+}
+
+.outer:nth-child(5n+1) {
+  clear: both;
+}
+
+.inner {
+  background-position: center;
+  background-size: cover;
+  display: table-cell;
+  height: 200px;
+  width: 200px;
+  vertical-align: middle;
 }
