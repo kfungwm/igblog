@@ -24,15 +24,16 @@
       </p>
       <div class="instagram">
 
+
       </div>
 
-
-      {{#each igApi as |igApi|}}
+      {{#each InstagramPic as |InstagramPic|}}
         <div class="outer">
-          <a target="_blank" href="{{{igApi.url}}}"><div class="inner" style="background-image: url('{{{igApi.img}}}')">
+          <a target="_blank" href="{{{InstagramPic.url}}}"><div class="inner" style="background-image: url('{{{InstagramPic.img}}}')">
           </div>
         </div>
       {{/each}}
+
 
     </div>
 
@@ -47,7 +48,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
     <script src="js/instagram.js"></script>
   </body>
 </html>
