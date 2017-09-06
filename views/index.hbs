@@ -10,31 +10,22 @@
   </head>
   <body>
     <div class="bgimg-1">
-
     </div>
-
     <div class="container text-center">
-
-      Instagram
-    </div>
-
-    <div class="container text-center">
-      <p>
-        Welcome World
-      </p>
-      <div class="instagram">
-
-
+      <div class="display-middle">
+        <h1 class="element"></h1>
       </div>
+    </div>
 
-      {{#each InstagramPic as |InstagramPic|}}
-        <div class="outer">
-          <a target="_blank" href="{{{InstagramPic.url}}}"><div class="inner" style="background-image: url('{{{InstagramPic.img}}}')">
+    <div class="container text-center" id="abroad">
+      <div class="instagram">
+        {{#each InstagramPic as |InstagramPic|}}
+          <div class="outer">
+            <a target="_blank" href="{{{InstagramPic.url}}}"><div class="inner" style="background-image: url('{{{InstagramPic.img}}}')">
+            </div>
           </div>
-        </div>
-      {{/each}}
-
-
+        {{/each}}
+      </div>
     </div>
 
 

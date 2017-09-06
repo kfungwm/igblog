@@ -9,6 +9,8 @@ var db = require('./models');
 
 var app = express();
 
+var port = process.env.PORT || 3003;
+
 var igRouter = require('./routes/igapi');
 var igRouter = require('./routes/instagrampic');
 
@@ -43,7 +45,7 @@ app.get('/', (req, res) => {
 
 
 db.sequelize.sync().then(() => {
-  app.listen(3000, () => {
-    console.log('Web server started on port 3000');
+  app.listen(port, () => {
+  console.log('Web server started on port', app.get('port'));
   });
 });

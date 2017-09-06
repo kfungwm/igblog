@@ -38,21 +38,21 @@ db.InstagramPic.findAll({
     getId.push(result.dataValues.ig_id);
     // console.log(getId.dataValues.ig_id);
   });
-  console.log(getId);
+  // console.log(getId);
   request("https://api.instagram.com/v1/users/self/media/recent/?access_token=3139185.369b559.7e7dacf5e1c94a409b8939609f337255", function(error, response, body) {
     if(!error && response.statusCode === 200) {
       var parsedData = JSON.parse(body);
-
+      console.log(parsedData);
       parsedData.data.forEach(function(ig) {
         var exist = false;
 
         for(var i = 0; i < getId.length; i++) {
           if(getId[i] == ig.id) {
-            console.log('GETID' + ' ' + getId[i] + 'nummer : '+ i);
-            console.log('CREATEAPI' + ' ' + ig.id);
-            console.log('----------------------------');
-            console.log('deze bestaat al!');
-            console.log();
+            // console.log('GETID' + ' ' + getId[i] + 'nummer : '+ i);
+            // console.log('CREATEAPI' + ' ' + ig.id);
+            // console.log('----------------------------');
+            // console.log('deze bestaat al!');
+            // console.log();
             exist = true;
             break;
           }

@@ -21,8 +21,6 @@ body, html {
     }
 }
 
-
-
 .img {
   max-width: 100%;
   max-height: 100%;
@@ -50,4 +48,25 @@ body, html {
   height: 200px;
   width: 200px;
   vertical-align: middle;
+}
+
+.element {
+  font-size: 35px;
+  color: white;
+  background: grey;
+  border-radius: 5px;
+  padding: 0.2em;
+}
+
+.display-middle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#abroad {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
